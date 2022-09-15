@@ -13,6 +13,7 @@
 		EEF6A5D728D2603A00BB0019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF6A5D528D2603A00BB0019 /* Main.storyboard */; };
 		EEF6A5D928D2603B00BB0019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF6A5D828D2603B00BB0019 /* Assets.xcassets */; };
 		EEF6A5DC28D2603B00BB0019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF6A5DA28D2603B00BB0019 /* LaunchScreen.storyboard */; };
+		EEF6A5E628D3C38500BB0019 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5E528D3C38500BB0019 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EEF6A5D828D2603B00BB0019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEF6A5DB28D2603B00BB0019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEF6A5DD28D2603B00BB0019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF6A5E528D3C38500BB0019 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				EEF6A5D128D2603A00BB0019 /* SceneDelegate.swift */,
 				EEF6A5D328D2603A00BB0019 /* ViewController.swift */,
 				EEF6A5D528D2603A00BB0019 /* Main.storyboard */,
+				EEF6A5E528D3C38500BB0019 /* CalculatorViewController.swift */,
 				EEF6A5D828D2603B00BB0019 /* Assets.xcassets */,
 				EEF6A5DA28D2603B00BB0019 /* LaunchScreen.storyboard */,
 				EEF6A5DD28D2603B00BB0019 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF6A5E628D3C38500BB0019 /* CalculatorViewController.swift in Sources */,
 				EEF6A5D428D2603A00BB0019 /* ViewController.swift in Sources */,
 				EEF6A5D028D2603A00BB0019 /* AppDelegate.swift in Sources */,
 				EEF6A5D228D2603A00BB0019 /* SceneDelegate.swift in Sources */,
