@@ -14,6 +14,9 @@
 		EEF6A5D928D2603B00BB0019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF6A5D828D2603B00BB0019 /* Assets.xcassets */; };
 		EEF6A5DC28D2603B00BB0019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF6A5DA28D2603B00BB0019 /* LaunchScreen.storyboard */; };
 		EEF6A5E628D3C38500BB0019 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5E528D3C38500BB0019 /* CalculatorViewController.swift */; };
+		EEF6A5E828D4199300BB0019 /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5E728D4199300BB0019 /* SegmentedViewController.swift */; };
+		EEF6A5EA28D41DA500BB0019 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5E928D41DA500BB0019 /* ImageView.swift */; };
+		EEF6A5EC28D423C100BB0019 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5EB28D423C100BB0019 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		EEF6A5DB28D2603B00BB0019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEF6A5DD28D2603B00BB0019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEF6A5E528D3C38500BB0019 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		EEF6A5E728D4199300BB0019 /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
+		EEF6A5E928D41DA500BB0019 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		EEF6A5EB28D423C100BB0019 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				EEF6A5CF28D2603A00BB0019 /* AppDelegate.swift */,
+				EEF6A5E728D4199300BB0019 /* SegmentedViewController.swift */,
 				EEF6A5D128D2603A00BB0019 /* SceneDelegate.swift */,
 				EEF6A5D328D2603A00BB0019 /* ViewController.swift */,
 				EEF6A5D528D2603A00BB0019 /* Main.storyboard */,
+				EEF6A5EB28D423C100BB0019 /* TimerViewController.swift */,
+				EEF6A5E928D41DA500BB0019 /* ImageView.swift */,
 				EEF6A5E528D3C38500BB0019 /* CalculatorViewController.swift */,
 				EEF6A5D828D2603B00BB0019 /* Assets.xcassets */,
 				EEF6A5DA28D2603B00BB0019 /* LaunchScreen.storyboard */,
@@ -141,8 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF6A5EA28D41DA500BB0019 /* ImageView.swift in Sources */,
 				EEF6A5E628D3C38500BB0019 /* CalculatorViewController.swift in Sources */,
 				EEF6A5D428D2603A00BB0019 /* ViewController.swift in Sources */,
+				EEF6A5EC28D423C100BB0019 /* TimerViewController.swift in Sources */,
+				EEF6A5E828D4199300BB0019 /* SegmentedViewController.swift in Sources */,
 				EEF6A5D028D2603A00BB0019 /* AppDelegate.swift in Sources */,
 				EEF6A5D228D2603A00BB0019 /* SceneDelegate.swift in Sources */,
 			);

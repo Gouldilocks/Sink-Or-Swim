@@ -136,6 +136,47 @@
             </objects>
             <point key="canvasLocation" x="1947.826086956522" y="219.64285714285714"/>
         </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="IMw-J1-ZQM">
+            <objects>
+                <viewController id="IyM-yA-J9K" customClass="TimerViewController" customModule="terribleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CJM-M7-H7R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFh-N8-7pp">
+                                <rect key="frame" x="50" y="138" width="314" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch me count to 10!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixj-1Q-DaF">
+                                <rect key="frame" x="50" y="88" width="314" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bfG-1o-pwr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lFh-N8-7pp" firstAttribute="top" secondItem="bfG-1o-pwr" secondAttribute="top" constant="50" id="B6H-z9-7Zu"/>
+                            <constraint firstItem="bfG-1o-pwr" firstAttribute="trailing" secondItem="lFh-N8-7pp" secondAttribute="trailing" constant="50" id="Frl-pO-SJq"/>
+                            <constraint firstItem="bfG-1o-pwr" firstAttribute="trailing" secondItem="ixj-1Q-DaF" secondAttribute="trailing" constant="50" id="KX7-PO-7C8"/>
+                            <constraint firstItem="lFh-N8-7pp" firstAttribute="leading" secondItem="bfG-1o-pwr" secondAttribute="leading" constant="50" id="faH-uo-gSN"/>
+                            <constraint firstItem="lFh-N8-7pp" firstAttribute="top" secondItem="ixj-1Q-DaF" secondAttribute="bottom" constant="29" id="hz1-nc-A8F"/>
+                            <constraint firstItem="ixj-1Q-DaF" firstAttribute="leading" secondItem="bfG-1o-pwr" secondAttribute="leading" constant="50" id="pYc-q8-rS2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZVk-fp-RDl"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="lFh-N8-7pp" id="bT3-Yv-Rzn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FCr-fC-Fcz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="955"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Sv3-NR-LHF">
             <objects>
@@ -166,6 +207,9 @@
                                 <rect key="frame" x="50" y="118" width="314" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="View The Greatness"/>
+                                <connections>
+                                    <segue destination="KkH-YJ-TZ3" kind="show" id="7bn-9n-YPn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFs-ID-QP0">
                                 <rect key="frame" x="50" y="242" width="314" height="31"/>
@@ -175,14 +219,33 @@
                                     <segue destination="g2T-V3-w6a" kind="show" id="fds-d4-t33"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-qi-L3P">
+                                <rect key="frame" x="50" y="352" width="314" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Picture Selector"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQO-sy-ZoY">
+                                <rect key="frame" x="50" y="433" width="314" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="The Timer"/>
+                                <connections>
+                                    <segue destination="IyM-yA-J9K" kind="show" id="xA4-YD-Gwq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Sqh-8g-8xL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VFs-ID-QP0" firstAttribute="leading" secondItem="Sqh-8g-8xL" secondAttribute="leading" constant="50" id="0j8-M8-ExR"/>
+                            <constraint firstItem="aQO-sy-ZoY" firstAttribute="top" secondItem="Taw-qi-L3P" secondAttribute="bottom" constant="50" id="1xp-Jg-UFq"/>
+                            <constraint firstItem="Taw-qi-L3P" firstAttribute="top" secondItem="VFs-ID-QP0" secondAttribute="bottom" constant="79" id="HIO-Eu-3Jp"/>
                             <constraint firstItem="Sqh-8g-8xL" firstAttribute="trailing" secondItem="99J-US-cNc" secondAttribute="trailing" constant="50" id="IbM-Wf-ffc"/>
+                            <constraint firstItem="aQO-sy-ZoY" firstAttribute="leading" secondItem="Sqh-8g-8xL" secondAttribute="leading" constant="50" id="O9F-vu-NK3"/>
                             <constraint firstItem="Sqh-8g-8xL" firstAttribute="trailing" secondItem="VFs-ID-QP0" secondAttribute="trailing" constant="50" id="OMC-yX-nId"/>
+                            <constraint firstItem="Sqh-8g-8xL" firstAttribute="trailing" secondItem="Taw-qi-L3P" secondAttribute="trailing" constant="50" id="Xsa-aL-yuF"/>
+                            <constraint firstItem="Taw-qi-L3P" firstAttribute="leading" secondItem="Sqh-8g-8xL" secondAttribute="leading" constant="50" id="auc-2o-9Ah"/>
                             <constraint firstItem="VFs-ID-QP0" firstAttribute="top" secondItem="99J-US-cNc" secondAttribute="bottom" constant="93" id="h6x-cH-hZE"/>
+                            <constraint firstItem="Sqh-8g-8xL" firstAttribute="trailing" secondItem="aQO-sy-ZoY" secondAttribute="trailing" constant="50" id="q0p-sI-qJd"/>
                             <constraint firstItem="99J-US-cNc" firstAttribute="leading" secondItem="Sqh-8g-8xL" secondAttribute="leading" constant="50" id="roc-Qf-fV7"/>
                             <constraint firstItem="99J-US-cNc" firstAttribute="top" secondItem="Sqh-8g-8xL" secondAttribute="top" constant="30" id="uKv-ZI-gco"/>
                         </constraints>
@@ -192,6 +255,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xno-7N-eOV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="895" y="99"/>
+        </scene>
+        <!--Segmented View Controller-->
+        <scene sceneID="PR0-3C-QG1">
+            <objects>
+                <viewController id="KkH-YJ-TZ3" customClass="SegmentedViewController" customModule="terribleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l6D-TS-FNM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vxn-kT-Jdd">
+                                <rect key="frame" x="50" y="96" width="314" height="32"/>
+                                <segments>
+                                    <segment title="First Message"/>
+                                    <segment title="Second Message"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment:" destination="KkH-YJ-TZ3" eventType="valueChanged" id="PQ3-Cu-Jdg"/>
+                                    <action selector="segment:" destination="96C-hq-uOP" eventType="valueChanged" id="qga-4h-4zP"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t4n-EU-hcQ">
+                                <rect key="frame" x="20" y="156" width="374" height="716"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Feo-Va-xKW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vxn-kT-Jdd" firstAttribute="top" secondItem="Feo-Va-xKW" secondAttribute="top" constant="8" id="13G-yr-xsp"/>
+                            <constraint firstItem="Feo-Va-xKW" firstAttribute="trailing" secondItem="t4n-EU-hcQ" secondAttribute="trailing" constant="20" id="EJa-ii-Vvh"/>
+                            <constraint firstItem="Feo-Va-xKW" firstAttribute="bottom" secondItem="t4n-EU-hcQ" secondAttribute="bottom" constant="-10" id="Gvi-ze-3cV"/>
+                            <constraint firstItem="t4n-EU-hcQ" firstAttribute="leading" secondItem="Feo-Va-xKW" secondAttribute="leading" constant="20" id="LAc-Se-sEz"/>
+                            <constraint firstItem="vxn-kT-Jdd" firstAttribute="leading" secondItem="Feo-Va-xKW" secondAttribute="leading" constant="50" id="RqZ-e9-iSZ"/>
+                            <constraint firstItem="t4n-EU-hcQ" firstAttribute="top" secondItem="Feo-Va-xKW" secondAttribute="top" constant="68" id="cEH-kt-4vJ"/>
+                            <constraint firstItem="Feo-Va-xKW" firstAttribute="trailing" secondItem="vxn-kT-Jdd" secondAttribute="trailing" constant="50" id="edZ-M1-NP2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lIK-tM-jbn"/>
+                    <connections>
+                        <outlet property="imageView" destination="t4n-EU-hcQ" id="9Ql-2I-yfd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3XF-Un-4IG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="96C-hq-uOP" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="-473"/>
         </scene>
     </scenes>
     <resources>
