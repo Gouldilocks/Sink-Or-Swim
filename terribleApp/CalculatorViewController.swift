@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIScrollViewDelegate {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var valueOfSlider: UILabel!
     @IBOutlet weak var stepper: UIStepper!

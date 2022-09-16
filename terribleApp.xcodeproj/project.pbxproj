@@ -17,6 +17,11 @@
 		EEF6A5E828D4199300BB0019 /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5E728D4199300BB0019 /* SegmentedViewController.swift */; };
 		EEF6A5EA28D41DA500BB0019 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5E928D41DA500BB0019 /* ImageView.swift */; };
 		EEF6A5EC28D423C100BB0019 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5EB28D423C100BB0019 /* TimerViewController.swift */; };
+		EEF6A5EE28D4280700BB0019 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5ED28D4280700BB0019 /* MyTableViewController.swift */; };
+		EEF6A5F428D4299500BB0019 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5F328D4299500BB0019 /* ImageModel.m */; };
+		EEF6A5FA28D42D5900BB0019 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5F928D42D5900BB0019 /* PictureViewController.swift */; };
+		EEF6A5FC28D42F9C00BB0019 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5FB28D42F9C00BB0019 /* CollectionViewController.swift */; };
+		EEF6A5FE28D4307800BB0019 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A5FD28D4307800BB0019 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,13 @@
 		EEF6A5E728D4199300BB0019 /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
 		EEF6A5E928D41DA500BB0019 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		EEF6A5EB28D423C100BB0019 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		EEF6A5ED28D4280700BB0019 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		EEF6A5F328D4299500BB0019 /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		EEF6A5F528D429BF00BB0019 /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		EEF6A5F828D42B8C00BB0019 /* terribleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "terribleApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		EEF6A5F928D42D5900BB0019 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		EEF6A5FB28D42F9C00BB0019 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		EEF6A5FD28D4307800BB0019 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +80,19 @@
 				EEF6A5E728D4199300BB0019 /* SegmentedViewController.swift */,
 				EEF6A5D128D2603A00BB0019 /* SceneDelegate.swift */,
 				EEF6A5D328D2603A00BB0019 /* ViewController.swift */,
+				EEF6A5F928D42D5900BB0019 /* PictureViewController.swift */,
+				EEF6A5FB28D42F9C00BB0019 /* CollectionViewController.swift */,
+				EEF6A5FD28D4307800BB0019 /* CollectionViewCell.swift */,
 				EEF6A5D528D2603A00BB0019 /* Main.storyboard */,
+				EEF6A5ED28D4280700BB0019 /* MyTableViewController.swift */,
+				EEF6A5F328D4299500BB0019 /* ImageModel.m */,
+				EEF6A5F528D429BF00BB0019 /* ImageModel.h */,
 				EEF6A5EB28D423C100BB0019 /* TimerViewController.swift */,
 				EEF6A5E928D41DA500BB0019 /* ImageView.swift */,
 				EEF6A5E528D3C38500BB0019 /* CalculatorViewController.swift */,
 				EEF6A5D828D2603B00BB0019 /* Assets.xcassets */,
 				EEF6A5DA28D2603B00BB0019 /* LaunchScreen.storyboard */,
+				EEF6A5F828D42B8C00BB0019 /* terribleApp-Bridging-Header.h */,
 				EEF6A5DD28D2603B00BB0019 /* Info.plist */,
 			);
 			path = terribleApp;
@@ -111,6 +130,7 @@
 				TargetAttributes = {
 					EEF6A5CB28D2603A00BB0019 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -152,11 +172,16 @@
 			files = (
 				EEF6A5EA28D41DA500BB0019 /* ImageView.swift in Sources */,
 				EEF6A5E628D3C38500BB0019 /* CalculatorViewController.swift in Sources */,
+				EEF6A5FE28D4307800BB0019 /* CollectionViewCell.swift in Sources */,
 				EEF6A5D428D2603A00BB0019 /* ViewController.swift in Sources */,
+				EEF6A5F428D4299500BB0019 /* ImageModel.m in Sources */,
+				EEF6A5EE28D4280700BB0019 /* MyTableViewController.swift in Sources */,
 				EEF6A5EC28D423C100BB0019 /* TimerViewController.swift in Sources */,
 				EEF6A5E828D4199300BB0019 /* SegmentedViewController.swift in Sources */,
 				EEF6A5D028D2603A00BB0019 /* AppDelegate.swift in Sources */,
 				EEF6A5D228D2603A00BB0019 /* SceneDelegate.swift in Sources */,
+				EEF6A5FA28D42D5900BB0019 /* PictureViewController.swift in Sources */,
+				EEF6A5FC28D42F9C00BB0019 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U92N5AUKTN;
@@ -319,6 +345,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.christian.terribleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "terribleApp/terribleApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U92N5AUKTN;
@@ -347,6 +376,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.christian.terribleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "terribleApp/terribleApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
